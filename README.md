@@ -7,7 +7,8 @@ Although written in typescript, you can still use the nodejs framework and koa m
 Not only that, you can also enjoy the type checking and convenient testing with typescript!
 
 ### Hello T-koa
-```
+
+```typescript
 import tKoa = require('tkoa');
 
 interface ctx {
