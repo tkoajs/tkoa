@@ -38,4 +38,4 @@ app.listen(3000);
 - Higher than version v7.6.0
 
 ## License
-[MIT](https://github.com/koajs/koa/blob/master/LICENSE)
+[MIT](https://github.com/tkoajs/tkoa/blob/master/LICENSE)
