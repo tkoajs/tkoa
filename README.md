@@ -34,6 +34,49 @@ app.use((ctx: ctx) => {
 app.listen(3000);
 ```
 
+### Middleware
+Tkoa is a middleware framework that can take two different kinds of functions as middleware:
+
+- async function
+- common function
+
+Here is an example of logger middleware with each of the different functions:
+
+#### async functions (node v7.6+):
+
+```typescript
+interface ctx {
+  method: string,
+  url: string
+}
+
+app.use(async (ctx: ctx, next: Function) => {
+  const start = Date.now();
+  await next();
+  const ms = Date.now() - start;
+  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+});
+```
+
+#### Common function
+```typescript
+// Middleware normally takes two parameters (ctx, next), ctx is the context for one request,
+// next is a function that is invoked to execute the downstream middleware. It returns a Promise with a then function for running code after completion.
+
+interface ctx {
+  method: string,
+  url: string
+}
+
+app.use((ctx: ctx, next: Function) => {
+  const start = Date.now();
+  return next().then(() => {
+    const ms = Date.now() - start;
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+  });
+});
+```
+
 ## Getting started
 - [Tkoa - wiki](https://github.com/tkoajs/tkoa/wiki)
 - [zhcn - 中文文档](https://github.com/tkoajs/tkoa/blob/master/README_CN.md)
