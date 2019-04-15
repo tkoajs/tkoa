@@ -36,3 +36,6 @@ app.listen(3000);
 - Higher than version v3.1
 ### Node.js
 - Higher than version v7.6.0
+
+## License
+[MIT](https://github.com/koajs/koa/blob/master/LICENSE)
