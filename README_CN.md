@@ -34,6 +34,49 @@ app.use((ctx: ctx) => {
 app.listen(3000);
 ```
 
+### Middleware
+Tkoa 是一个中间件框架，拥有两种中间件：
+
+- 异步中间件
+- 普通中间件
+
+下面是一个日志记录中间件示例，其中使用了不同的中间件类型：
+
+#### async functions (node v7.6+):
+
+```typescript
+interface ctx {
+  method: string,
+  url: string
+}
+
+app.use(async (ctx: ctx, next: Function) => {
+  const start = Date.now();
+  await next();
+  const ms = Date.now() - start;
+  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+});
+```
+
+#### Common function
+```typescript
+// Middleware normally takes two parameters (ctx, next), ctx is the context for one request,
+// next is a function that is invoked to execute the downstream middleware. It returns a Promise with a then function for running code after completion.
+
+interface ctx {
+  method: string,
+  url: string
+}
+
+app.use((ctx: ctx, next: Function) => {
+  const start = Date.now();
+  return next().then(() => {
+    const ms = Date.now() - start;
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+  });
+});
+```
+
 ## Getting started
 - [Tkoa - 教程](https://github.com/tkoajs/tkoa/wiki)
 - [en - english readme](https://github.com/tkoajs/tkoa/blob/master/README.md)
