@@ -1,8 +1,9 @@
 {
   "name": "tkoa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Koa web app framework written in typescript.",
-  "main": "built/application.js",
+  "main": "./lib/application.js",
+  "types": "./lib/application.ts",
   "scripts": {
     "test": "ava --verbose"
   },
@@ -54,6 +55,7 @@
     "parseurl": "^1.3.2",
     "statuses": "^1.5.0",
     "type-is": "^1.6.16",
+    "typescript": "^3.4.3",
     "vary": "^1.1.2"
   }
 }
