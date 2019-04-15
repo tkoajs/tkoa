@@ -80,7 +80,7 @@ app.use((ctx: ctx, next: Function) => {
 ## Getting started
 - [Tkoa - 教程](https://github.com/tkoajs/tkoa/wiki)
 - [en - english readme](https://github.com/tkoajs/tkoa/blob/master/README.md)
-- [Gitter聊天室](https://gitter.im/tkoa-js/community)
+- [Gitter - 聊天室](https://gitter.im/tkoa-js/community)
 
 ## Support
 ### TypeScript
