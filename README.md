@@ -29,4 +29,4 @@ app.listen(3000);
 
 ## Getting started
 - [Tkoa - wiki](https://github.com/tkoajs/tkoa/wiki)
-- [zhcn - 中文文档](k)
+- [zhcn - 中文文档](https://github.com/tkoajs/tkoa/blob/master/README_CN.md)
