@@ -28,4 +28,4 @@ app.listen(3000);
 ```
 
 ## Getting started
-[http://www.baidu.com](wiki)
+[tkoa - wiki](https://github.com/tkoajs/tkoa/wiki)
