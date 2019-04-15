@@ -28,4 +28,4 @@ app.listen(3000);
 ```
 
 ## Getting started
-![wiki](http://www.baidu.com)
+[http://www.baidu.com](wiki)
