@@ -30,3 +30,9 @@ app.listen(3000);
 ## Getting started
 - [Tkoa - wiki](https://github.com/tkoajs/tkoa/wiki)
 - [zhcn - 中文文档](https://github.com/tkoajs/tkoa/blob/master/README_CN.md)
+
+## Support
+### TypeScript
+- Higher than version v3.1
+### Node.js
+- Higher than version v7.6.0
