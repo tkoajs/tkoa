@@ -7,7 +7,7 @@ Although written in typescript, you can still use the nodejs framework and koa m
 Not only that, you can also enjoy the type checking and convenient testing with typescript!
 
 ## Installation
-TKoa requires >= **typescript v3.1.0** and **node v7.6.0** for ES2015 and async function support.
+TKoa requires **>= typescript v3.1.0** and **node v7.6.0** for ES2015 and async function support.
 
 ```shell
 $ npm install tkoa
