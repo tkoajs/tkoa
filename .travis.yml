@@ -9,6 +9,7 @@ cache:
 
 install:
   - npm i --global ava
+  - npm install --dependencies
 
 before_script:
 
