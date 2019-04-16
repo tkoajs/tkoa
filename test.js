@@ -2,7 +2,7 @@ import test from 'ava';
 
 let tKoa = require('./lib/application.js');
 
-test('new server', t => {
+test('newServer testing', t => {
     t.is(() => {
         try {
             let app = new tKoa();
