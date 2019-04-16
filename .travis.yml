@@ -1,0 +1,22 @@
+language: node_js
+node_js: 
+    - '8'
+
+cache:
+  directories:
+    - node_modules
+
+
+install:
+  - npm i --global ava
+
+before_script:
+
+script:
+  - npm run test
+
+branches:
+  only:
+    - master
+env:
+ global:
