@@ -2,14 +2,15 @@ import test from 'ava';
 
 let tKoa = require('./lib/application.js');
 
-test('newServer testing', t => {
-    t.is(() => {
-        try {
-            let app = new tKoa();
-        } catch (e) {
-            return false;
-        }
+function newServer() {
+    try {
+        let app = new tKoa();
+    } catch (e) {
+        return 'fail';
+    }
+    return 'pass';
+}
 
-        return true;
-    }, true);
+test('newServer testing', t => {
+    t.is(newServer(), true);
 });
