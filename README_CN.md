@@ -1,5 +1,11 @@
 ![tkoa logo](https://raw.githubusercontent.com/tkoajs/tkoa/master/source/logo.png)
 
+<p align="center">
+    <img alt='tkoa build badge' src='https://travis-ci.org/tkoajs/tkoa.svg?branch=master'>
+    <img alt='tkoa npm badge' src='https://img.shields.io/npm/v/tkoa.svg'>
+    <a href='https://gitter.im/tkoa-js/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link'><img alt='tkoa gitter badge' src='https://badges.gitter.im/tkoa-js/community.svg'></a>
+</p>
+
 🌈 Tkoa是使用 typescript 编写的 koa 框架！ ![typescript logo](https://raw.githubusercontent.com/tkoajs/tkoa/master/source/ts%20logo.png)
 
 尽管它是基于 typescript 编写，但是你依然还是可以使用一些 node.js 框架和基于 koa 的中间件。
