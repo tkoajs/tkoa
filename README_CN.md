@@ -46,15 +46,15 @@ Tkoa 是一个中间件框架，拥有两种中间件：
 
 ```typescript
 interface ctx {
-  method: string,
-  url: string
+    method: string,
+    url: string
 }
 
 app.use(async (ctx: ctx, next: Function) => {
-  const start = Date.now();
-  await next();
-  const ms = Date.now() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+    const start = Date.now();
+    await next();
+    const ms = Date.now() - start;
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 ```
 
@@ -63,16 +63,16 @@ app.use(async (ctx: ctx, next: Function) => {
 // 中间件通常需要两个参数（ctx，next），ctx是一个请求的上下文，next是一个被调用来执行下游中间件的函数。它返回一个带有then函数的Promise，用于在完成后运行代码。
 
 interface ctx {
-  method: string,
-  url: string
+    method: string,
+    url: string
 }
 
 app.use((ctx: ctx, next: Function) => {
-  const start = Date.now();
-  return next().then(() => {
-    const ms = Date.now() - start;
-    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
-  });
+    const start = Date.now();
+    return next().then(() => {
+        const ms = Date.now() - start;
+        console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+    });
 });
 ```
 
