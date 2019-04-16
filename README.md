@@ -1,5 +1,7 @@
 ![tkoa logo](https://raw.githubusercontent.com/tkoajs/tkoa/master/source/logo.png)
 
+<p style="margin: auto">![tkoa build](https://travis-ci.org/tkoajs/tkoa.svg?branch=master)</p>
+
 🌈 Tkoa is a Koa web app framework written in typescript. ![typescript logo](https://raw.githubusercontent.com/tkoajs/tkoa/master/source/ts%20logo.png)
 
 Although written in typescript, you can still use the nodejs framework and koa middleware.
