@@ -46,15 +46,15 @@ Here is an example of logger middleware with each of the different functions:
 
 ```typescript
 interface ctx {
-  method: string,
-  url: string
+    method: string,
+    url: string
 }
 
 app.use(async (ctx: ctx, next: Function) => {
-  const start = Date.now();
-  await next();
-  const ms = Date.now() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+    const start = Date.now();
+    await next();
+    const ms = Date.now() - start;
+    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 ```
 
@@ -64,16 +64,16 @@ app.use(async (ctx: ctx, next: Function) => {
 // next is a function that is invoked to execute the downstream middleware. It returns a Promise with a then function for running code after completion.
 
 interface ctx {
-  method: string,
-  url: string
+    method: string,
+    url: string
 }
 
 app.use((ctx: ctx, next: Function) => {
-  const start = Date.now();
-  return next().then(() => {
-    const ms = Date.now() - start;
-    console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
-  });
+    const start = Date.now();
+    return next().then(() => {
+        const ms = Date.now() - start;
+        console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
+    });
 });
 ```
 
