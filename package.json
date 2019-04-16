@@ -5,7 +5,7 @@
   "main": "./lib/application.js",
   "types": "./lib/application.ts",
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava lib/application.js"
   },
   "keywords": [
     "koa",
