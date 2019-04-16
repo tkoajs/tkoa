@@ -26,7 +26,7 @@ interface ctx {
 
 const app = new tKoa();
 
-// response
+// 响应
 app.use((ctx: ctx) => {
     ctx.res.end('Hello T-koa!');
 });
@@ -60,8 +60,7 @@ app.use(async (ctx: ctx, next: Function) => {
 
 #### Common function
 ```typescript
-// Middleware normally takes two parameters (ctx, next), ctx is the context for one request,
-// next is a function that is invoked to execute the downstream middleware. It returns a Promise with a then function for running code after completion.
+// 中间件通常需要两个参数（ctx，next），ctx是一个请求的上下文，next是一个被调用来执行下游中间件的函数。它返回一个带有then函数的Promise，用于在完成后运行代码。
 
 interface ctx {
   method: string,
