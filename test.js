@@ -12,5 +12,5 @@ function newServer() {
 }
 
 test('newServer testing', t => {
-    t.is(newServer(), true);
+    t.is(newServer(), 'pass');
 });
