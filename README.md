@@ -1,6 +1,10 @@
 ![tkoa logo](https://raw.githubusercontent.com/tkoajs/tkoa/master/source/logo.png)
 
-<p align="center"><img alt='tkoa build' src='https://travis-ci.org/tkoajs/tkoa.svg?branch=master'></p>
+<p align="center">
+    <img alt='tkoa build badge' src='https://travis-ci.org/tkoajs/tkoa.svg?branch=master'>
+    <img alt='tkoa npm badge' src='https://img.shields.io/npm/v/tkoa.svg'>
+    <a href='https://gitter.im/tkoa-js/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link'><img alt='tkoa gitter badge' src='https://gitter.im/tkoa-js/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge'></a>
+</p>
 
 🌈 Tkoa is a Koa web app framework written in typescript. ![typescript logo](https://raw.githubusercontent.com/tkoajs/tkoa/master/source/ts%20logo.png)
 
